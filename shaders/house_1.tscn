@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://dif175aiu5dgq"]
+
+[ext_resource type="PackedScene" uid="uid://dstbav8c33omw" path="res://3D/buildings/Dzirnavu_bro/House1.glb" id="1_v051i"]
+
+[node name="House1" unique_id=2076824969 instance=ExtResource("1_v051i")]

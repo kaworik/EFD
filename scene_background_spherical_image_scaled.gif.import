@@ -1,0 +1,16 @@
+[remap]
+
+importer="texture_gif"
+importer_version=1
+type="GIFTexture"
+uid="uid://ci4k5t25s5s3k"
+path="res://.godot/imported/scene_background_spherical_image_scaled.gif-93dcfbeff13900a89b12319349e1ba25.res"
+
+[deps]
+
+source_file="res://scene_background_spherical_image_scaled.gif"
+dest_files=["res://.godot/imported/scene_background_spherical_image_scaled.gif-93dcfbeff13900a89b12319349e1ba25.res"]
+
+[params]
+
+storage/compress=true

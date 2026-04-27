@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://b3mly3fda8xn1"]
+
+[ext_resource type="Script" uid="uid://dimhhoonyv450" path="res://transfered/Player.gd" id="1_b0lku"]
+[ext_resource type="PackedScene" uid="uid://bj4e8vpbaak01" path="res://scenes/hand.tscn" id="3_i3pqv"]
+[ext_resource type="Texture2D" uid="uid://ddruumcfbmg71" path="res://old_textures/old_mysc/fractal-253781_1280.png" id="4_2hs0m"]
+[ext_resource type="Texture2D" uid="uid://sjgjf2sro3tb" path="res://old_textures/LOGO.png" id="5_sweqy"]
+[ext_resource type="PackedScene" uid="uid://cq4xwsnywv6my" path="res://scenes/pause_menu.tscn" id="6_2hs0m"]
+[ext_resource type="PackedScene" uid="uid://b3atebi7ivp7k" path="res://3D/IDOL/idol.tscn" id="23_7lmhl"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_v0byj"]
+size = Vector3(1, 2.12744, 1)
+
+[node name="Player" type="CharacterBody3D" unique_id=1086875029]
+script = ExtResource("1_b0lku")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2010447450]
+transform = Transform3D(1, 0, -7.45058e-09, 0, 1, 0, 7.45058e-09, 0, 1, 0, 0.425537, 0)
+shape = SubResource("BoxShape3D_v0byj")
+
+[node name="Head" type="Node3D" parent="." unique_id=1601557498]
+transform = Transform3D(1, 0, -1.11759e-08, 0, 1, 0, 1.11759e-08, 0, 1, 0, 1.42155, 0.072959185)
+
+[node name="Camera3D" type="Camera3D" parent="Head" unique_id=841019133]
+transform = Transform3D(1.0000002, -0.00016573128, -8.783997e-05, 0.00016572305, 1, -9.321204e-05, 8.785542e-05, 9.31975e-05, 1.0000002, -2.28882e-05, -0.010202169, -0.428917)
+fov = 37.849285
+near = 0.2
+
+[node name="IDOL" parent="Head/Camera3D" unique_id=1454807943 instance=ExtResource("23_7lmhl")]
+transform = Transform3D(-2.952674, 0.0007301654, -0.00024623523, 0.00048935023, 4.4059386, -0.0002614346, 0.00025913757, -0.00041068663, -2.8051674, -0.022680579, -2.0400577, 0.46109688)
+
+[node name="hand2" parent="Head/Camera3D" unique_id=1966979412 instance=ExtResource("3_i3pqv")]
+transform = Transform3D(0.18074925, 0.7368473, -0.31456694, -0.47988907, 0.34839234, 0.44388136, -0.3449062, -0.098591745, -0.782449, -0.42060328, -0.5178931, -0.36643356)
+visible = false
+
+[node name="hand" parent="Head/Camera3D" unique_id=1320439470 instance=ExtResource("3_i3pqv")]
+transform = Transform3D(-0.0029571103, -0.44888642, 0.12131569, -0.34809205, 0.08257375, 0.2970504, -0.30829957, -0.08892614, -0.3365542, 0.29217315, -0.32633376, -0.2704987)
+visible = false
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Head/Camera3D" unique_id=803646083]
+layer = 0
+follow_viewport_enabled = true
+
+[node name="HUD" type="Control" parent="Head/Camera3D/CanvasLayer" unique_id=942050417]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Crosshair" type="TextureRect" parent="Head/Camera3D/CanvasLayer/HUD" unique_id=317112528]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -9.5
+offset_top = -9.5
+offset_right = 9.5
+offset_bottom = 9.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_2hs0m")
+expand_mode = 1
+
+[node name="LOGO" type="TextureRect" parent="Head/Camera3D/CanvasLayer/HUD" unique_id=275889760]
+layout_mode = 1
+offset_right = 164.0
+offset_bottom = 164.0
+texture = ExtResource("5_sweqy")
+expand_mode = 1
+
+[node name="PauseMenu" parent="." unique_id=928474777 instance=ExtResource("6_2hs0m")]

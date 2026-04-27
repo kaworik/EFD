@@ -1,0 +1,16 @@
+[remap]
+
+importer="texture_gif"
+importer_version=1
+type="GIFTexture"
+uid="uid://fkykm8b6d4mo"
+path="res://.godot/imported/aim_bro.gif-3a3501759bd6d7c160ce43c630106f46.res"
+
+[deps]
+
+source_file="res://textures/UI/aim_bro.gif"
+dest_files=["res://.godot/imported/aim_bro.gif-3a3501759bd6d7c160ce43c630106f46.res"]
+
+[params]
+
+storage/compress=true

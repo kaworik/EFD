@@ -1,0 +1,126 @@
+[gd_scene format=3 uid="uid://cq4xwsnywv6my"]
+
+[ext_resource type="Script" uid="uid://bkrrrmt0fxin8" path="res://scenes/pause_menu.gd" id="1_ar2xs"]
+[ext_resource type="Texture2D" uid="uid://cpjcfjqv38oe3" path="res://textures/gif_text/backdrop_gif.gif" id="2_5gujb"]
+[ext_resource type="PackedScene" uid="uid://b34w6nvyr6yae" path="res://scenes/UI_Scenes/cursor.tscn" id="2_jkjer"]
+[ext_resource type="Texture2D" uid="uid://c2jhf7oe0heug" path="res://textures/UI/Resume_Hoverr.png" id="3_5gujb"]
+[ext_resource type="Texture2D" uid="uid://diiru43jwwdd1" path="res://textures/UI/REsume_Pressed.png" id="4_fy126"]
+[ext_resource type="Texture2D" uid="uid://sswt0n05vt40" path="res://textures/UI/Resume_But.png" id="5_bhxne"]
+[ext_resource type="Texture2D" uid="uid://tvuff55albo1" path="res://textures/UI/Restart.png" id="6_vlav8"]
+[ext_resource type="Texture2D" uid="uid://dj236k8rsj7oh" path="res://textures/UI/Restart_Hover.png" id="7_shxmr"]
+[ext_resource type="Texture2D" uid="uid://dw2dlpgruh3hw" path="res://textures/UI/Restart_Pressed.png" id="8_5wegr"]
+[ext_resource type="Texture2D" uid="uid://cpal15po05duj" path="res://textures/UI/Quit_Bonus.png" id="9_ns75t"]
+[ext_resource type="Texture2D" uid="uid://ek64wk6tidcg" path="res://textures/UI/Quit.png" id="10_s8k84"]
+[ext_resource type="Texture2D" uid="uid://3j8f77l0dtsh" path="res://textures/UI/Quit_Hover.png" id="11_dmw1k"]
+[ext_resource type="AudioStream" uid="uid://dfw8ct6iefnr3" path="res://Audio/UI_Clicks_Sounds/Hover3.mp3" id="12_3hsps"]
+[ext_resource type="AudioStream" uid="uid://caxul2bit6axf" path="res://Audio/UI_Clicks_Sounds/Hover2.mp3" id="13_vtr1r"]
+[ext_resource type="AudioStream" uid="uid://cabm7gtkeyop7" path="res://Audio/UI_Clicks_Sounds/Hover1.mp3" id="14_a1ndm"]
+[ext_resource type="AudioStream" uid="uid://78hre8qks84u" path="res://Pluck_Friday_B_TL.wav" id="15_etf8b"]
+[ext_resource type="AudioStream" uid="uid://ckgip3amd3hlm" path="res://Audio/UI_Clicks_Sounds/Click1.mp3" id="16_ndks8"]
+[ext_resource type="AudioStream" uid="uid://b7508erbf4ex1" path="res://Audio/UI_Clicks_Sounds/Click2.mp3" id="17_reqs4"]
+[ext_resource type="AudioStream" uid="uid://bkbutkyth7ijk" path="res://Audio/UI_Clicks_Sounds/Click3.mp3" id="18_7s4e5"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_u1c27"]
+playback_mode = 1
+random_pitch = 3.1748018
+random_volume_offset_db = 1.0
+streams_count = 4
+stream_0/stream = ExtResource("12_3hsps")
+stream_0/weight = 2.0
+stream_1/stream = ExtResource("13_vtr1r")
+stream_2/stream = ExtResource("14_a1ndm")
+stream_3/stream = ExtResource("15_etf8b")
+stream_3/weight = 90.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_7hik5"]
+playback_mode = 1
+random_pitch = 1.7817973
+random_volume_offset_db = 1.0
+streams_count = 3
+stream_0/stream = ExtResource("16_ndks8")
+stream_0/weight = 80.0
+stream_1/stream = ExtResource("17_reqs4")
+stream_1/weight = 10.0
+stream_2/stream = ExtResource("18_7s4e5")
+stream_2/weight = 5.0
+
+[node name="PauseMenu" type="Control" unique_id=928474777]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ar2xs")
+
+[node name="GIFPlayer" type="GIFPlayer" parent="." unique_id=294251370]
+gif = ExtResource("2_5gujb")
+speed_scale = 0.7
+stretch_mode = 0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="cursor" parent="." unique_id=865868188 instance=ExtResource("2_jkjer")]
+layout_mode = 1
+anchors_preset = 9
+anchor_right = 0.0
+grow_horizontal = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=625560115]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.0
+offset_top = -274.0
+offset_right = 90.0
+offset_bottom = 274.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="RestartButton" type="TextureButton" parent="VBoxContainer" unique_id=1620579032]
+layout_mode = 2
+texture_normal = ExtResource("7_shxmr")
+texture_pressed = ExtResource("6_vlav8")
+texture_hover = ExtResource("8_5wegr")
+stretch_mode = 0
+
+[node name="ResumeButton" type="TextureButton" parent="VBoxContainer" unique_id=1676359683]
+layout_mode = 2
+texture_normal = ExtResource("3_5gujb")
+texture_pressed = ExtResource("4_fy126")
+texture_hover = ExtResource("5_bhxne")
+stretch_mode = 0
+
+[node name="QuitButton" type="TextureButton" parent="VBoxContainer" unique_id=1317050999]
+layout_mode = 2
+texture_normal = ExtResource("9_ns75t")
+texture_pressed = ExtResource("10_s8k84")
+texture_hover = ExtResource("11_dmw1k")
+stretch_mode = 0
+
+[node name="Hover" type="AudioStreamPlayer" parent="VBoxContainer" unique_id=732001511]
+stream = SubResource("AudioStreamRandomizer_u1c27")
+volume_db = -10.0
+bus = &"HUD"
+
+[node name="Click" type="AudioStreamPlayer" parent="VBoxContainer" unique_id=1057168296]
+stream = SubResource("AudioStreamRandomizer_7hik5")
+volume_db = -6.0
+bus = &"HUD"
+
+[connection signal="mouse_entered" from="VBoxContainer/RestartButton" to="." method="_on_restart_button_mouse_entered"]
+[connection signal="pressed" from="VBoxContainer/RestartButton" to="." method="_on_restart_button_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer/ResumeButton" to="." method="_on_resume_button_mouse_entered"]
+[connection signal="pressed" from="VBoxContainer/ResumeButton" to="." method="_on_resume_button_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_mouse_entered"]
+[connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]

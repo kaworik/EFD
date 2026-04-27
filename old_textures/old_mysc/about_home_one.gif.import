@@ -1,0 +1,16 @@
+[remap]
+
+importer="texture_gif"
+importer_version=1
+type="GIFTexture"
+uid="uid://2wrbg8vhymp7"
+path="res://.godot/imported/about_home_one.gif-e8d22119f206f8a3319fedb49049ab42.res"
+
+[deps]
+
+source_file="res://old_textures/old_mysc/about_home_one.gif"
+dest_files=["res://.godot/imported/about_home_one.gif-e8d22119f206f8a3319fedb49049ab42.res"]
+
+[params]
+
+storage/compress=true

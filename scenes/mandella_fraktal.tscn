@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://fqod5hu1iekd"]
+
+[ext_resource type="Script" uid="uid://c68xx3dt28d52" path="res://scenes/mandella_fraktal.gd" id="1_76yu2"]
+[ext_resource type="Texture2D" uid="uid://dahqobocivemo" path="res://textures/UI/erd_experimental.png" id="2_55b2t"]
+
+[node name="Fraktal" type="Control" unique_id=2094850717]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_76yu2")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1059799123]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -21.5
+offset_top = -36.5
+offset_right = 21.5
+offset_bottom = 36.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_55b2t")
+expand_mode = 1

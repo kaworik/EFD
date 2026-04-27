@@ -1,0 +1,16 @@
+[remap]
+
+importer="texture_gif"
+importer_version=1
+type="GIFTexture"
+uid="uid://cpjcfjqv38oe3"
+path="res://.godot/imported/backdrop_gif.gif-c95ad4413b218366d227679485c23aa7.res"
+
+[deps]
+
+source_file="res://textures/gif_text/backdrop_gif.gif"
+dest_files=["res://.godot/imported/backdrop_gif.gif-c95ad4413b218366d227679485c23aa7.res"]
+
+[params]
+
+storage/compress=true

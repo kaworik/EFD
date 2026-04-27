@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dhsr6fpgg6l5f"]
+
+[ext_resource type="PackedScene" uid="uid://c2q3r5dw8l5yy" path="res://3D/trees/tree6/tree6.fbx" id="1_qipqk"]
+[ext_resource type="Texture2D" uid="uid://culd1q4ql0esc" path="res://3D/trees/tree4/Bark-1413.jpg" id="2_8bcmg"]
+[ext_resource type="Texture2D" uid="uid://63k0areevmcx" path="res://3D/trees/tree4/bark04_normal.png" id="3_oeivh"]
+[ext_resource type="Texture2D" uid="uid://bpkeyntr5pl8j" path="res://3D/trees/tree5/stump01_roughness.png" id="4_s1a8l"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m8724"]
+albedo_color = Color(0.41215247, 0.41215247, 0.41215247, 1)
+albedo_texture = ExtResource("2_8bcmg")
+metallic_specular = 0.0
+roughness_texture = ExtResource("4_s1a8l")
+normal_enabled = true
+normal_scale = 5.1
+normal_texture = ExtResource("3_oeivh")
+
+[node name="tree6" unique_id=1147475452 instance=ExtResource("1_qipqk")]
+
+[node name="bark13_0" parent="." index="0" unique_id=2010191669]
+surface_material_override/0 = SubResource("StandardMaterial3D_m8724")

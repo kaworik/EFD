@@ -1,0 +1,16 @@
+[remap]
+
+importer="texture_gif"
+importer_version=1
+type="GIFTexture"
+uid="uid://bn15833x1qhtd"
+path="res://.godot/imported/currso_man.gif-3d50fd2c25a2be7882fc652ab708d8eb.res"
+
+[deps]
+
+source_file="res://textures/UI/currso_man.gif"
+dest_files=["res://.godot/imported/currso_man.gif-3d50fd2c25a2be7882fc652ab708d8eb.res"]
+
+[params]
+
+storage/compress=true

@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://i6wqoscuef47"]
+
+[ext_resource type="PackedScene" uid="uid://c2q3r5dw8l5yy" path="res://3D/trees/tree6/tree6.fbx" id="1_xcy43"]
+
+[node name="tree6" unique_id=1147475452 instance=ExtResource("1_xcy43")]

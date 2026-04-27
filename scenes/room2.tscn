@@ -1,0 +1,120 @@
+[gd_scene format=3 uid="uid://d5mva6rfmhtw"]
+
+[ext_resource type="Texture2D" uid="uid://bwxcx4ay17cpl" path="res://textures/environment/hdr/dragon.png" id="1_ucjjd"]
+[ext_resource type="PackedScene" uid="uid://b3mly3fda8xn1" path="res://player.tscn" id="2_7xh3p"]
+[ext_resource type="Texture2D" uid="uid://7dunvhjca6b" path="res://textures/environment/mud/mud_ao.png" id="3_2robf"]
+[ext_resource type="Texture2D" uid="uid://gcu24cc55cxu" path="res://textures/environment/mud/mud_normal-ogl.png" id="4_c7xmq"]
+[ext_resource type="Texture2D" uid="uid://cd8mbv13jr7wp" path="res://textures/environment/mud/mud_height.png" id="5_olrvt"]
+[ext_resource type="Texture2D" uid="uid://ct3ayat87hrtu" path="res://textures/environment/mud/mud_roughness.png" id="6_5wf3f"]
+[ext_resource type="Script" uid="uid://buwivyecuymp6" path="res://area_3d.gd" id="7_dwq2r"]
+
+[sub_resource type="GDScript" id="GDScript_gw0q2"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_cv072"]
+panorama = ExtResource("1_ucjjd")
+
+[sub_resource type="Sky" id="Sky_ucjjd"]
+sky_material = SubResource("PanoramaSkyMaterial_cv072")
+
+[sub_resource type="Environment" id="Environment_jykgh"]
+background_mode = 2
+sky = SubResource("Sky_ucjjd")
+
+[sub_resource type="Animation" id="Animation_ucjjd"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../steniPOLpotolok/water:material_override:uv1_offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0.8943474, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_7xh3p"]
+resource_name = "flow"
+length = 100.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../steniPOLpotolok/water:material_override:uv1_offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 100),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2robf"]
+_data = {
+&"RESET": SubResource("Animation_ucjjd"),
+&"flow": SubResource("Animation_7xh3p")
+}
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0ntnr"]
+metallic = 1.0
+metallic_specular = 1.0
+roughness = 0.0
+roughness_texture = ExtResource("6_5wf3f")
+normal_enabled = true
+normal_scale = 0.4
+normal_texture = ExtResource("4_c7xmq")
+bent_normal_enabled = true
+bent_normal_texture = ExtResource("4_c7xmq")
+ao_enabled = true
+ao_light_affect = 0.19
+ao_texture = ExtResource("3_2robf")
+heightmap_enabled = true
+heightmap_scale = 1.0
+heightmap_texture = ExtResource("5_olrvt")
+subsurf_scatter_strength = 0.23
+uv1_scale = Vector3(250, 250, 250)
+uv1_offset = Vector3(0, 0.8943474, 0)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_tv6ow"]
+radius = 16.855043
+
+[node name="WORLD" type="Node3D" unique_id=1749135289]
+script = SubResource("GDScript_gw0q2")
+
+[node name="CORE" type="Node3D" parent="." unique_id=783300471]
+
+[node name="world" type="WorldEnvironment" parent="CORE" unique_id=1642815455]
+environment = SubResource("Environment_jykgh")
+
+[node name="Player" parent="CORE" unique_id=1086875029 instance=ExtResource("2_7xh3p")]
+transform = Transform3D(0.99999976, 0, 0, 0, 1, 0, 0, 0, 0.99999976, 0, 2.9382095, 0)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CORE" unique_id=1306879152]
+libraries/ = SubResource("AnimationLibrary_2robf")
+autoplay = &"flow"
+
+[node name="steniPOLpotolok" type="Node3D" parent="." unique_id=1872378276]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -370.348, 70.5536, -17.8739)
+
+[node name="water" type="CSGBox3D" parent="steniPOLpotolok" unique_id=508790615]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 761.333, -73.777084, 43.93)
+material_override = SubResource("StandardMaterial3D_0ntnr")
+cast_shadow = 0
+lod_bias = 112.191
+gi_mode = 2
+use_collision = true
+size = Vector3(1000, 3.1303554, 1000)
+
+[node name="TP" type="Area3D" parent="." unique_id=1149851803]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.8126, 28.5545, 3.26642)
+script = ExtResource("7_dwq2r")
+
+[node name="TP_Collision" type="CollisionShape3D" parent="TP" unique_id=294051425]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.743465, -27.583668, 0)
+shape = SubResource("SphereShape3D_tv6ow")
+
+[connection signal="body_entered" from="TP" to="TP" method="_on_body_entered"]
+[connection signal="body_exited" from="TP" to="TP" method="_on_body_exited"]

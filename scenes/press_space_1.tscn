@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://bpbktptp3m650"]
+
+[ext_resource type="Texture2D" uid="uid://ban0kw3egns2u" path="res://textures/UI/Space.png" id="1_lcwtg"]
+[ext_resource type="Texture2D" uid="uid://bphun6iemipy1" path="res://old_textures/old_design_symb/body.png" id="2_kf7tl"]
+
+[node name="Node2D" type="Node2D" unique_id=534883446]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=484926337]
+follow_viewport_enabled = true
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=867424535]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -70.5
+offset_top = -11.303757
+offset_right = 70.5
+offset_bottom = 11.303757
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_lcwtg")
+expand_mode = 1
+
+[node name="TextureRect3" type="TextureRect" parent="CanvasLayer" unique_id=2038659330]
+offset_left = 481.0
+offset_top = 212.0
+offset_right = 718.0
+offset_bottom = 297.8874
+texture = ExtResource("2_kf7tl")
+expand_mode = 1
+
+[node name="TextureRect4" type="TextureRect" parent="CanvasLayer" unique_id=1853479672]
+offset_left = 259.0
+offset_top = 281.0
+offset_right = 413.0
+offset_bottom = 338.25226
+texture = ExtResource("2_kf7tl")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer" unique_id=65204190]
+offset_left = 313.0
+offset_top = 214.0
+offset_right = 432.0
+offset_bottom = 323.8874
+texture = ExtResource("2_kf7tl")
+expand_mode = 1

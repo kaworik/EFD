@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bwhs7qqd2qosi"]
+
+[ext_resource type="PackedScene" uid="uid://cytvdcr6ky54u" path="res://3D/tower_1/tower_1.gltf" id="1_5x0t7"]
+[ext_resource type="Texture2D" uid="uid://cpw3veq4x81cx" path="res://3D/Tower_2/TEXTURE_SCHOOL.png" id="2_siiu7"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ft1qt"]
+albedo_texture = ExtResource("2_siiu7")
+metallic_specular = 0.0
+rim = 0.7
+
+[node name="tower_1" unique_id=490792203 instance=ExtResource("1_5x0t7")]
+
+[node name="Cube" parent="." index="0" unique_id=1662917008]
+surface_material_override/0 = SubResource("StandardMaterial3D_ft1qt")

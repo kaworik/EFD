@@ -1,0 +1,94 @@
+[gd_scene format=3 uid="uid://jwsj3fl76d36"]
+
+[ext_resource type="Texture2D" uid="uid://cyr1cpfw4fliq" path="res://textures/environment/hdr/2k_earth_daymap.jpg" id="1_npsde"]
+[ext_resource type="PackedScene" uid="uid://b3mly3fda8xn1" path="res://player.tscn" id="2_ml6mh"]
+[ext_resource type="Texture2D" uid="uid://7dunvhjca6b" path="res://textures/environment/mud/mud_ao.png" id="3_3k0wu"]
+[ext_resource type="Texture2D" uid="uid://gcu24cc55cxu" path="res://textures/environment/mud/mud_normal-ogl.png" id="4_kxjkn"]
+[ext_resource type="Texture2D" uid="uid://cd8mbv13jr7wp" path="res://textures/environment/mud/mud_height.png" id="5_erp5q"]
+[ext_resource type="Texture2D" uid="uid://ct3ayat87hrtu" path="res://textures/environment/mud/mud_roughness.png" id="6_8tq5h"]
+[ext_resource type="Script" uid="uid://dtgr2bdijwphc" path="res://area_3d2.gd" id="7_7iym2"]
+[ext_resource type="PackedScene" uid="uid://ctxgvdqt24a1i" path="res://3D/book/BOOKELE.blend" id="8_bhtnt"]
+[ext_resource type="PackedScene" uid="uid://l74ihg2xx53q" path="res://3D/NPC/npc.tscn" id="9_ml6mh"]
+
+[sub_resource type="GDScript" id="GDScript_gw0q2"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_vk7w7"]
+panorama = ExtResource("1_npsde")
+
+[sub_resource type="Sky" id="Sky_8e036"]
+sky_material = SubResource("PanoramaSkyMaterial_vk7w7")
+radiance_size = 6
+
+[sub_resource type="Environment" id="Environment_23v6p"]
+background_mode = 2
+sky = SubResource("Sky_8e036")
+tonemap_agx_contrast = 2.0
+glow_enabled = true
+glow_normalized = true
+glow_intensity = 3.48
+glow_strength = 0.95
+glow_bloom = 0.09
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xwx8c"]
+metallic = 1.0
+metallic_specular = 1.0
+roughness = 0.0
+roughness_texture = ExtResource("6_8tq5h")
+normal_enabled = true
+normal_scale = 0.03
+normal_texture = ExtResource("4_kxjkn")
+bent_normal_texture = ExtResource("4_kxjkn")
+ao_enabled = true
+ao_light_affect = 0.19
+ao_texture = ExtResource("3_3k0wu")
+heightmap_enabled = true
+heightmap_scale = 1.0
+heightmap_texture = ExtResource("5_erp5q")
+subsurf_scatter_strength = 0.23
+uv1_scale = Vector3(250, 250, 250)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_f5k5o"]
+radius = 0.85024303
+
+[node name="WORLD" type="Node3D" unique_id=1690635580]
+script = SubResource("GDScript_gw0q2")
+
+[node name="CORE" type="Node3D" parent="." unique_id=1393018180]
+
+[node name="world" type="WorldEnvironment" parent="CORE" unique_id=705079464]
+environment = SubResource("Environment_23v6p")
+
+[node name="Player" parent="CORE" unique_id=1086875029 instance=ExtResource("2_ml6mh")]
+transform = Transform3D(0.99999976, 0, 0, 0, 1, 0, 0, 0, 0.99999976, 0, 0.70354795, 0)
+
+[node name="ground" type="Node3D" parent="." unique_id=1537759310]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -370.348, 70.5536, -17.8739)
+
+[node name="water" type="CSGBox3D" parent="ground" unique_id=831124472]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 380.80884, -72.2223, 21.897635)
+material_override = SubResource("StandardMaterial3D_xwx8c")
+cast_shadow = 0
+lod_bias = 112.191
+gi_mode = 2
+use_collision = true
+size = Vector3(1000, 3.1303554, 1000)
+
+[node name="TP" type="Area3D" parent="." unique_id=1305137871]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 2.581653, 0.103437185, -8.1957245)
+script = ExtResource("7_7iym2")
+
+[node name="BOOKELE" parent="TP" unique_id=189054997 instance=ExtResource("8_bhtnt")]
+transform = Transform3D(-2.1362436, -9.504695, 0.94467294, -8.462622e-08, -0.96801156, -9.739514, 9.551521, -2.1257708, 0.21128054, 0.09260893, 0.82375264, 0.1473229)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TP" unique_id=1282028756]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75508296, 0)
+shape = SubResource("SphereShape3D_f5k5o")
+
+[node name="NPC" parent="." unique_id=1115192588 instance=ExtResource("9_ml6mh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.110453844, -0.062528774, -8.641251)
+radius = null
+linear_speed = null
+use_pivot = null
+
+[connection signal="body_entered" from="TP" to="TP" method="_on_body_entered"]
+[connection signal="body_exited" from="TP" to="TP" method="_on_body_exited"]

@@ -1,0 +1,218 @@
+[gd_scene format=3 uid="uid://jwsj3fl76d36"]
+
+[ext_resource type="Texture2D" uid="uid://cyr1cpfw4fliq" path="res://textures/environment/hdr/2k_earth_daymap.jpg" id="1_npsde"]
+[ext_resource type="PackedScene" uid="uid://b3mly3fda8xn1" path="res://player.tscn" id="2_ml6mh"]
+[ext_resource type="Texture2D" uid="uid://7dunvhjca6b" path="res://textures/environment/mud/mud_ao.png" id="3_3k0wu"]
+[ext_resource type="Script" uid="uid://jy4sym0dop3s" path="res://addons/godot_material_footsteps/core/material_footstep_player_3d.gd" id="3_uuffa"]
+[ext_resource type="Script" uid="uid://cfs28riswyejx" path="res://addons/godot_material_footsteps/resources/material_footstep.gd" id="4_jy8xq"]
+[ext_resource type="Texture2D" uid="uid://gcu24cc55cxu" path="res://textures/environment/mud/mud_normal-ogl.png" id="4_kxjkn"]
+[ext_resource type="AudioStream" uid="uid://dhk8kgwcr1tsv" path="res://Audio/step_distorted_grass.mp3" id="5_6opo0"]
+[ext_resource type="Texture2D" uid="uid://cd8mbv13jr7wp" path="res://textures/environment/mud/mud_height.png" id="5_erp5q"]
+[ext_resource type="Texture2D" uid="uid://ct3ayat87hrtu" path="res://textures/environment/mud/mud_roughness.png" id="6_8tq5h"]
+[ext_resource type="AudioStream" uid="uid://4b4kxrpnah50" path="res://Audio/step_distorted_grass_2.mp3" id="6_cpypd"]
+[ext_resource type="Script" uid="uid://dtgr2bdijwphc" path="res://area_3d2.gd" id="7_7iym2"]
+[ext_resource type="AudioStream" uid="uid://batnv1fm3mq8a" path="res://Audio/step_wet_grass.mp3" id="7_pirsv"]
+[ext_resource type="PackedScene" uid="uid://ctxgvdqt24a1i" path="res://3D/book/BOOKELE.blend" id="8_bhtnt"]
+[ext_resource type="AudioStream" uid="uid://dvd7l8u3dq8fy" path="res://Audio/step_wet_grass2.mp3" id="8_e2n1r"]
+[ext_resource type="AudioStream" uid="uid://bxdcaoty1eyko" path="res://sand-walk-106366.wav" id="9_j7ftk"]
+[ext_resource type="PackedScene" uid="uid://l74ihg2xx53q" path="res://3D/NPC/npc.tscn" id="9_ml6mh"]
+[ext_resource type="AudioStream" uid="uid://bh0ttcodwar15" path="res://Audio/sand-walk-2.wav" id="10_qot1e"]
+[ext_resource type="AudioStream" uid="uid://dyjq8ix758bj" path="res://sand-walk-3.wav" id="11_5k71a"]
+[ext_resource type="AudioStream" uid="uid://bijkpriwme2pf" path="res://sand-walk-4.wav" id="12_qhs31"]
+[ext_resource type="AudioStream" uid="uid://dchrtrpvc6cu0" path="res://Audio/dry_stone_jump_1.wav.mp3" id="13_iic8x"]
+[ext_resource type="AudioStream" uid="uid://b3omn4cjafliu" path="res://Audio/dry_stone_step_1.wav.mp3" id="14_7rrkc"]
+[ext_resource type="AudioStream" uid="uid://x17wsf1ds1q4" path="res://Audio/dry_stone_step_2.wav.mp3" id="15_s4bpy"]
+[ext_resource type="AudioStream" uid="uid://gom66bik0oyv" path="res://Audio/dry_stone_step_3.wav.mp3" id="16_6e63b"]
+[ext_resource type="AudioStream" uid="uid://ftgu5rkfouu0" path="res://Audio/dry_stone_step_4.wav.mp3" id="17_51ny3"]
+[ext_resource type="AudioStream" uid="uid://pef84jwqlo00" path="res://Audio/dry_stone_step_5.wav.mp3" id="18_bv1by"]
+[ext_resource type="AudioStream" uid="uid://esumj6sdvwag" path="res://Audio/dry_stone_step_6.wav.mp3" id="19_0yfmx"]
+[ext_resource type="AudioStream" uid="uid://dtrur4x8tky0k" path="res://Audio/dry_stone_step_7.wav.mp3" id="20_kve0v"]
+[ext_resource type="AudioStream" uid="uid://bcc4y1b18cw5r" path="res://sand-walk-2.wav" id="21_n072r"]
+[ext_resource type="Script" uid="uid://dkb8ltjc6067n" path="res://addons/raytraced_audio/raytraced_audio_player_3d.gd" id="22_p0evy"]
+[ext_resource type="Script" uid="uid://bjpmu5sklv5h8" path="res://addons/raytraced_audio/raytraced_audio_listener.gd" id="23_5li4k"]
+
+[sub_resource type="GDScript" id="GDScript_gw0q2"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_vk7w7"]
+panorama = ExtResource("1_npsde")
+
+[sub_resource type="Sky" id="Sky_8e036"]
+sky_material = SubResource("PanoramaSkyMaterial_vk7w7")
+radiance_size = 6
+
+[sub_resource type="Environment" id="Environment_23v6p"]
+background_mode = 2
+sky = SubResource("Sky_8e036")
+tonemap_agx_contrast = 2.0
+glow_enabled = true
+glow_normalized = true
+glow_intensity = 3.48
+glow_strength = 0.95
+glow_bloom = 0.09
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_owjoo"]
+random_pitch = 1.0293022
+random_volume_offset_db = 0.5
+streams_count = 2
+stream_0/stream = ExtResource("5_6opo0")
+stream_1/stream = ExtResource("6_cpypd")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_d8svc"]
+random_pitch = 1.0594631
+random_volume_offset_db = 1.0
+streams_count = 3
+stream_0/stream = ExtResource("7_pirsv")
+stream_1/stream = ExtResource("8_e2n1r")
+stream_2/stream = ExtResource("7_pirsv")
+
+[sub_resource type="Resource" id="Resource_geg64"]
+script = ExtResource("4_jy8xq")
+material_name = "0.0"
+movement_sound = SubResource("AudioStreamRandomizer_d8svc")
+landing_sound = SubResource("AudioStreamRandomizer_owjoo")
+metadata/_custom_type_script = "uid://cfs28riswyejx"
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_4m00y"]
+random_pitch = 1.0594631
+random_volume_offset_db = 1.0
+streams_count = 4
+stream_0/stream = ExtResource("9_j7ftk")
+stream_1/stream = ExtResource("10_qot1e")
+stream_2/stream = ExtResource("11_5k71a")
+stream_3/stream = ExtResource("12_qhs31")
+
+[sub_resource type="Resource" id="Resource_uu1d7"]
+script = ExtResource("4_jy8xq")
+material_name = "1.0"
+movement_sound = SubResource("AudioStreamRandomizer_4m00y")
+metadata/_custom_type_script = "uid://cfs28riswyejx"
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_s7b80"]
+random_pitch = 1.0594631
+random_volume_offset_db = 1.0
+streams_count = 1
+stream_0/stream = ExtResource("13_iic8x")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_jj2ho"]
+random_pitch = 1.0293022
+random_volume_offset_db = 0.5
+streams_count = 7
+stream_0/stream = ExtResource("14_7rrkc")
+stream_1/stream = ExtResource("15_s4bpy")
+stream_2/stream = ExtResource("16_6e63b")
+stream_3/stream = ExtResource("17_51ny3")
+stream_4/stream = ExtResource("18_bv1by")
+stream_5/stream = ExtResource("19_0yfmx")
+stream_6/stream = ExtResource("20_kve0v")
+
+[sub_resource type="Resource" id="Resource_gst7w"]
+script = ExtResource("4_jy8xq")
+material_name = "3.0"
+movement_sound = SubResource("AudioStreamRandomizer_jj2ho")
+landing_sound = SubResource("AudioStreamRandomizer_s7b80")
+metadata/_custom_type_script = "uid://cfs28riswyejx"
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_uuffa"]
+random_pitch = 1.0293022
+streams_count = 4
+stream_0/stream = ExtResource("9_j7ftk")
+stream_1/stream = ExtResource("11_5k71a")
+stream_2/stream = ExtResource("21_n072r")
+stream_3/stream = ExtResource("12_qhs31")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xwx8c"]
+metallic = 1.0
+metallic_specular = 1.0
+roughness = 0.0
+roughness_texture = ExtResource("6_8tq5h")
+normal_enabled = true
+normal_scale = 0.03
+normal_texture = ExtResource("4_kxjkn")
+bent_normal_texture = ExtResource("4_kxjkn")
+ao_enabled = true
+ao_light_affect = 0.19
+ao_texture = ExtResource("3_3k0wu")
+heightmap_enabled = true
+heightmap_scale = 1.0
+heightmap_texture = ExtResource("5_erp5q")
+subsurf_scatter_strength = 0.23
+uv1_scale = Vector3(250, 250, 250)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_f5k5o"]
+radius = 0.85024303
+
+[node name="WORLD" type="Node3D" unique_id=1690635580]
+script = SubResource("GDScript_gw0q2")
+
+[node name="CORE" type="Node3D" parent="." unique_id=1393018180]
+
+[node name="world" type="WorldEnvironment" parent="CORE" unique_id=705079464]
+environment = SubResource("Environment_23v6p")
+
+[node name="Player" parent="CORE" unique_id=1086875029 instance=ExtResource("2_ml6mh")]
+transform = Transform3D(0.99999976, 0, 0, 0, 1, 0, 0, 0, 0.99999976, -0.45506287, 0.70488405, 2.5236053)
+
+[node name="MaterialFootstepPlayer3D3" type="RayCast3D" parent="CORE/Player" unique_id=1279074012 node_paths=PackedStringArray("character")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5362154, 0)
+exclude_parent = false
+collision_mask = 7
+hit_from_inside = true
+collide_with_areas = true
+script = ExtResource("3_uuffa")
+character = NodePath("..")
+material_footstep_sound_map = Array[ExtResource("4_jy8xq")]([SubResource("Resource_geg64"), SubResource("Resource_uu1d7"), SubResource("Resource_gst7w")])
+surface_material_detection = false
+grid_map_material_detection = false
+meta_data_material_detection = false
+h_terrain_material_detection = false
+accepted_meta_data_names = PackedStringArray("surface_type")
+default_material_footstep_movement_sound = SubResource("AudioStreamRandomizer_uuffa")
+default_material_footstep_landing_sound = ExtResource("9_j7ftk")
+min_footstep_delay = 0.1
+max_footstep_delay = 1.0
+character_max_speed = 13.0
+min_movement_velocity = 1.0
+caching = true
+debug = false
+metadata/_custom_type_script = "uid://jy4sym0dop3s"
+
+[node name="RaytracedSteps3D3" type="AudioStreamPlayer3D" parent="CORE/Player" unique_id=549643118]
+transform = Transform3D(1.0000002, 0, 0, 0, 1, 0, 0, 0, 1.0000002, 0, 1.4426732, -0.37151122)
+attenuation_model = 2
+emission_angle_enabled = true
+script = ExtResource("22_p0evy")
+metadata/_custom_type_script = "uid://dkb8ltjc6067n"
+
+[node name="RaytracedAudioListener3" type="AudioListener3D" parent="CORE/Player" unique_id=786720437]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3657956, -0.39499664)
+script = ExtResource("23_5li4k")
+metadata/_custom_type_script = "uid://bjpmu5sklv5h8"
+
+[node name="ground" type="Node3D" parent="." unique_id=1537759310]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -370.348, 70.5536, -17.8739)
+
+[node name="water" type="CSGBox3D" parent="ground" unique_id=831124472]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 380.80884, -72.2223, 21.897635)
+material_override = SubResource("StandardMaterial3D_xwx8c")
+cast_shadow = 0
+lod_bias = 112.191
+gi_mode = 2
+use_collision = true
+size = Vector3(1000, 3.1303554, 1000)
+
+[node name="TP" type="Area3D" parent="." unique_id=1305137871]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 2.581653, 0.103437185, -8.1957245)
+script = ExtResource("7_7iym2")
+
+[node name="BOOKELE" parent="TP" unique_id=189054997 instance=ExtResource("8_bhtnt")]
+transform = Transform3D(-2.1362436, -9.504695, 0.94467294, -8.462622e-08, -0.96801156, -9.739514, 9.551521, -2.1257708, 0.21128054, 0.09260893, 0.82375264, 0.1473229)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TP" unique_id=1282028756]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75508296, 0)
+shape = SubResource("SphereShape3D_f5k5o")
+
+[node name="NPC" parent="." unique_id=1115192588 instance=ExtResource("9_ml6mh")]
+radius = 10.0
+
+[connection signal="body_entered" from="TP" to="TP" method="_on_body_entered"]
+[connection signal="body_exited" from="TP" to="TP" method="_on_body_exited"]

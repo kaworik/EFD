@@ -1,0 +1,184 @@
+[gd_scene format=3 uid="uid://cy814b88a6m3a"]
+
+[ext_resource type="PackedScene" uid="uid://di025hlclovd8" path="res://3D/itch/rocks1/proc_rock_live.tscn" id="1_uy7e4"]
+[ext_resource type="PackedScene" uid="uid://dsgpjptnw5yif" path="res://3D/itch/rocks1/proc_rock_live_001.tscn" id="2_40lne"]
+[ext_resource type="PackedScene" uid="uid://lesgjjr3adp3" path="res://3D/itch/rocks1/proc_rock_live_002.tscn" id="3_am1dg"]
+[ext_resource type="PackedScene" uid="uid://dfg5hky1g67uf" path="res://3D/itch/rocks1/proc_rock_live_003.tscn" id="4_2qlms"]
+[ext_resource type="PackedScene" uid="uid://buxa64smjj65q" path="res://3D/itch/rocks1/proc_rock_live_004.tscn" id="5_jrmvl"]
+[ext_resource type="PackedScene" uid="uid://dx677e34jt6ln" path="res://3D/itch/rocks1/proc_rock_live_005.tscn" id="6_4n2u8"]
+[ext_resource type="PackedScene" uid="uid://b6xcng3oorkqh" path="res://3D/itch/rocks1/proc_rock_live_007.tscn" id="7_s3gpa"]
+[ext_resource type="PackedScene" uid="uid://bmlbm6cf6xrx" path="res://3D/itch/rocks1/proc_rock_live_009.tscn" id="8_myik8"]
+[ext_resource type="PackedScene" uid="uid://so6p5tt6xqqh" path="res://3D/itch/rocks1/proc_rock_live_010.tscn" id="9_qujvl"]
+[ext_resource type="PackedScene" uid="uid://ctpstycukygk6" path="res://3D/itch/rocks1/proc_rock_live_011.tscn" id="10_5vgsv"]
+[ext_resource type="PackedScene" uid="uid://bpkq3udx43f7l" path="res://3D/itch/rocks1/proc_rock_live_012.tscn" id="11_k6wpa"]
+[ext_resource type="PackedScene" uid="uid://crqblmpv74mf5" path="res://3D/itch/rocks1/proc_rock_live_013.tscn" id="12_h4ra5"]
+[ext_resource type="PackedScene" uid="uid://boevx3f4eop1y" path="res://3D/itch/rocks1/proc_rock_live_014.tscn" id="13_1w4q3"]
+[ext_resource type="PackedScene" uid="uid://cqck78ocqtaud" path="res://3D/itch/rocks1/proc_rock_live_015.tscn" id="14_d8ixf"]
+[ext_resource type="PackedScene" uid="uid://bwogqlsu8j0mv" path="res://3D/itch/rocks1/proc_rock_live_016.tscn" id="15_1ibfw"]
+[ext_resource type="PackedScene" uid="uid://cyemcjpbvsxy8" path="res://3D/itch/rocks1/proc_rock_live_018.tscn" id="16_ms3m8"]
+[ext_resource type="PackedScene" uid="uid://hwke0q01j6li" path="res://3D/itch/rocks1/proc_rock_live_019.tscn" id="17_b342g"]
+[ext_resource type="PackedScene" uid="uid://dh6xouaxgfdug" path="res://3D/itch/rocks1/proc_rock_live_020.tscn" id="18_bem3b"]
+[ext_resource type="PackedScene" uid="uid://cuwov3yem708b" path="res://3D/itch/rocks1/proc_rock_live_021.tscn" id="19_e2ni6"]
+[ext_resource type="PackedScene" uid="uid://cpx3k0h1rnqy5" path="res://3D/itch/rocks1/proc_rock_live_022.tscn" id="20_8om61"]
+[ext_resource type="PackedScene" uid="uid://du21q2qe2v26q" path="res://3D/itch/rocks1/proc_rock_live_023.tscn" id="21_p0j5e"]
+[ext_resource type="PackedScene" uid="uid://bmf4ui0pc1sg0" path="res://3D/itch/rocks1/proc_rock_live_024.tscn" id="22_o374d"]
+[ext_resource type="PackedScene" uid="uid://cy38kqa3vjqid" path="res://3D/itch/rocks1/proc_rock_live_025.tscn" id="23_tttqb"]
+[ext_resource type="PackedScene" uid="uid://bt70wkb4jskyy" path="res://3D/itch/rocks1/proc_rock_live_026.tscn" id="24_efl38"]
+[ext_resource type="PackedScene" uid="uid://8fbethr6mql4" path="res://3D/itch/rocks1/proc_rock_live_027.tscn" id="25_n27c4"]
+[ext_resource type="PackedScene" uid="uid://doaldjfdljbdh" path="res://3D/itch/rocks1/proc_rock_live_028.tscn" id="26_inu5p"]
+[ext_resource type="PackedScene" uid="uid://bcvsni5vg4ota" path="res://3D/itch/rocks1/proc_rock_live_029.tscn" id="27_4ve1d"]
+[ext_resource type="PackedScene" uid="uid://djto6mta0ssl6" path="res://3D/itch/rocks1/proc_rock_live_030.tscn" id="28_hcvtx"]
+[ext_resource type="PackedScene" uid="uid://ususdggf4amg" path="res://3D/itch/rocks1/proc_rock_live_031.tscn" id="29_asitc"]
+[ext_resource type="PackedScene" uid="uid://c5rp6x1ybfoc4" path="res://3D/itch/rocks1/proc_rock_live_032.tscn" id="30_23ool"]
+[ext_resource type="PackedScene" uid="uid://crh8rog2l70re" path="res://3D/itch/rocks1/proc_rock_live_033.tscn" id="31_cwajb"]
+[ext_resource type="PackedScene" uid="uid://cjklthedod3b0" path="res://3D/itch/rocks1/proc_rock_live_034.tscn" id="32_kij01"]
+[ext_resource type="PackedScene" uid="uid://daaljokeeldkm" path="res://3D/itch/rocks1/proc_rock_live_035.tscn" id="33_omkgv"]
+[ext_resource type="PackedScene" uid="uid://44l3ccgnn4j7" path="res://3D/itch/rocks1/proc_rock_live_036.tscn" id="34_2hiov"]
+[ext_resource type="PackedScene" uid="uid://cw6um6hs64cpv" path="res://3D/itch/rocks1/proc_rock_live_037.tscn" id="35_5xixy"]
+[ext_resource type="PackedScene" uid="uid://251imqdgbn1n" path="res://3D/itch/rocks1/proc_rock_live_038.tscn" id="36_dtiyt"]
+[ext_resource type="PackedScene" uid="uid://yg02d0nekfg6" path="res://3D/itch/rocks1/proc_rock_live_039.tscn" id="37_m2xcp"]
+[ext_resource type="PackedScene" uid="uid://bceesuntategp" path="res://3D/itch/rocks1/proc_rock_live_040.tscn" id="38_lim2x"]
+[ext_resource type="PackedScene" uid="uid://ddbro6hw0wd15" path="res://3D/itch/rocks1/proc_rock_live_041.tscn" id="39_7jf70"]
+[ext_resource type="PackedScene" uid="uid://c0mknmelae013" path="res://3D/itch/rocks1/proc_rock_live_042.tscn" id="40_f7dgl"]
+[ext_resource type="PackedScene" uid="uid://mtib7ho7os77" path="res://3D/itch/rocks1/proc_rock_live_043.tscn" id="41_jtt61"]
+[ext_resource type="PackedScene" uid="uid://tmcw83kpm6xe" path="res://3D/itch/rocks1/proc_rock_live_044.tscn" id="42_r64kw"]
+[ext_resource type="PackedScene" uid="uid://bsvkenug3xgh1" path="res://3D/itch/rocks1/proc_rock_live_045.tscn" id="43_pv2dg"]
+[ext_resource type="PackedScene" uid="uid://bet2bbdh0bwbi" path="res://3D/itch/rocks1/proc_rock_live_046.tscn" id="44_uvw5g"]
+[ext_resource type="PackedScene" uid="uid://bpnn2kj6b7gbw" path="res://3D/itch/rocks1/proc_rock_live_047.tscn" id="45_srwrm"]
+
+[node name="rock" type="Node3D" unique_id=1425391192]
+
+[node name="ProcRock_Live" parent="." unique_id=1348716507 instance=ExtResource("1_uy7e4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.4212914, 0.81314665, -4.873012)
+
+[node name="ProcRock_Live_001" parent="." unique_id=455380685 instance=ExtResource("2_40lne")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.534112, 0.6355241, -1.5069644)
+
+[node name="ProcRock_Live_002" parent="." unique_id=687044488 instance=ExtResource("3_am1dg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0163662, 0.07694985, -2.7336743)
+
+[node name="ProcRock_Live_003" parent="." unique_id=230921695 instance=ExtResource("4_2qlms")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.16653453, -2.1630087)
+
+[node name="ProcRock_Live_004" parent="." unique_id=685931237 instance=ExtResource("5_jrmvl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.527206, 0.113052145, -6.84532)
+
+[node name="ProcRock_Live_005" parent="." unique_id=992878984 instance=ExtResource("6_4n2u8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.8062572, 0.23383299, -2.9069524)
+
+[node name="ProcRock_Live_007" parent="." unique_id=580071989 instance=ExtResource("7_s3gpa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.411686, 1.3238518, -10.986394)
+
+[node name="ProcRock_Live_009" parent="." unique_id=1749728764 instance=ExtResource("8_myik8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.206412, 1.5225353, 5.0104146)
+
+[node name="ProcRock_Live_010" parent="." unique_id=98773078 instance=ExtResource("9_qujvl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.2650166, 2.2213407, 8.238072)
+
+[node name="ProcRock_Live_011" parent="." unique_id=1549622819 instance=ExtResource("10_5vgsv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.15397, 0.23141335, 6.178555)
+
+[node name="ProcRock_Live_012" parent="." unique_id=132645069 instance=ExtResource("11_k6wpa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.251625, 0, -8.413731)
+
+[node name="ProcRock_Live_013" parent="." unique_id=812954955 instance=ExtResource("12_h4ra5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.61605, 0.33303565, -0.8319793)
+
+[node name="ProcRock_Live_014" parent="." unique_id=1622264740 instance=ExtResource("13_1w4q3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.065427944, -2.7761774)
+
+[node name="ProcRock_Live_015" parent="." unique_id=1661212544 instance=ExtResource("14_d8ixf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9924442, 0.04521951, 0)
+
+[node name="ProcRock_Live_016" parent="." unique_id=1229616202 instance=ExtResource("15_1ibfw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1707518, 0.08969899, -0.5447096)
+
+[node name="ProcRock_Live_018" parent="." unique_id=1701583387 instance=ExtResource("16_ms3m8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.765557, 0.06027486, -10.028988)
+
+[node name="ProcRock_Live_019" parent="." unique_id=949787727 instance=ExtResource("17_b342g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.20916, 0.031148324, -9.59069)
+
+[node name="ProcRock_Live_020" parent="." unique_id=478832279 instance=ExtResource("18_bem3b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.747587, 1.7373968, 4.4731464)
+
+[node name="ProcRock_Live_021" parent="." unique_id=92785636 instance=ExtResource("19_e2ni6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.482021, 0, -8.004087)
+
+[node name="ProcRock_Live_022" parent="." unique_id=643879209 instance=ExtResource("20_8om61")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.300769, 2.6235323, -1.334261)
+
+[node name="ProcRock_Live_023" parent="." unique_id=888077750 instance=ExtResource("21_p0j5e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.343798, 3.5183766, 3.497807)
+
+[node name="ProcRock_Live_024" parent="." unique_id=1411748852 instance=ExtResource("22_o374d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.522642, 1.687297, 12.040705)
+
+[node name="ProcRock_Live_025" parent="." unique_id=52516419 instance=ExtResource("23_tttqb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5658836, 0, 13.462216)
+
+[node name="ProcRock_Live_026" parent="." unique_id=336851363 instance=ExtResource("24_efl38")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.11739, 0.45600122, 7.1831975)
+
+[node name="ProcRock_Live_027" parent="." unique_id=332557856 instance=ExtResource("25_n27c4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.455738, 0.6227862, 3.3270798)
+
+[node name="ProcRock_Live_028" parent="." unique_id=87711172 instance=ExtResource("26_inu5p")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.490076, 1.9100753, -4.0790424)
+
+[node name="ProcRock_Live_029" parent="." unique_id=1850940486 instance=ExtResource("27_4ve1d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.103458, 1.2800936, -3.9631777)
+
+[node name="ProcRock_Live_030" parent="." unique_id=1828896346 instance=ExtResource("28_hcvtx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.839896, 0, -6.946788)
+
+[node name="ProcRock_Live_031" parent="." unique_id=1050161884 instance=ExtResource("29_asitc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.27402598, 0.38464528, 0.043995857)
+
+[node name="ProcRock_Live_032" parent="." unique_id=1500770222 instance=ExtResource("30_23ool")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7292213, 0.14494702, -2.0879464)
+
+[node name="ProcRock_Live_033" parent="." unique_id=2124300894 instance=ExtResource("31_cwajb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.134073, 0.090331666, -9.821045)
+
+[node name="ProcRock_Live_034" parent="." unique_id=274089702 instance=ExtResource("32_kij01")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7186407, 0.059660785, 0.496834)
+
+[node name="ProcRock_Live_035" parent="." unique_id=297690248 instance=ExtResource("33_omkgv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8073412, 0.15003593, -0.9327078)
+
+[node name="ProcRock_Live_036" parent="." unique_id=514075255 instance=ExtResource("34_2hiov")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06449616, 0.09855631, -1.3392875)
+
+[node name="ProcRock_Live_037" parent="." unique_id=36026182 instance=ExtResource("35_5xixy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.788665, 0.08200601, -1.1075602)
+
+[node name="ProcRock_Live_038" parent="." unique_id=1861543185 instance=ExtResource("36_dtiyt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5352057, 0.11536045, -1.2474318)
+
+[node name="ProcRock_Live_039" parent="." unique_id=863125403 instance=ExtResource("37_m2xcp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0067594, 0.023773417, -1.5173407)
+
+[node name="ProcRock_Live_040" parent="." unique_id=281152699 instance=ExtResource("38_lim2x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.028981287, -3.2665884)
+
+[node name="ProcRock_Live_041" parent="." unique_id=922840845 instance=ExtResource("39_7jf70")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.93376595, 0.04214975, -1.850014)
+
+[node name="ProcRock_Live_042" parent="." unique_id=1069068439 instance=ExtResource("40_f7dgl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.58919185, 0.059702516, -2.4260402)
+
+[node name="ProcRock_Live_043" parent="." unique_id=698773430 instance=ExtResource("41_jtt61")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6330297, 0.075240836, -2.8664584)
+
+[node name="ProcRock_Live_044" parent="." unique_id=1426016077 instance=ExtResource("42_r64kw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.573904, 0.060514897, -3.1812015)
+
+[node name="ProcRock_Live_045" parent="." unique_id=987765915 instance=ExtResource("43_pv2dg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.8895836, 0.17774129, -0.82574487)
+
+[node name="ProcRock_Live_046" parent="." unique_id=2096406465 instance=ExtResource("44_uvw5g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.388927, 0, -6.3589582)
+
+[node name="ProcRock_Live_047" parent="." unique_id=1516968147 instance=ExtResource("45_srwrm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.358105, 0.07021978, -9.276413)

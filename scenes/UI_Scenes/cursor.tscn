@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://b34w6nvyr6yae"]
+
+[ext_resource type="Texture2D" uid="uid://c8jlahx0mejei" path="res://textures/UI/cursor_new.png" id="1_u8xnm"]
+[ext_resource type="Script" uid="uid://vnbddpsnmhab" path="res://scenes/UI_Scenes/sprite_2d.gd" id="2_u8xnm"]
+
+[node name="cursor" type="Control" unique_id=865868188]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1749612282]
+z_index = 4096
+position = Vector2(771, 367)
+scale = Vector2(0.08066748, 0.08066748)
+texture = ExtResource("1_u8xnm")
+offset = Vector2(500, 500)
+script = ExtResource("2_u8xnm")

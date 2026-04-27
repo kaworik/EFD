@@ -1,0 +1,16 @@
+[remap]
+
+importer="texture_gif"
+importer_version=1
+type="GIFTexture"
+uid="uid://bl7h0swnhsxs5"
+path="res://.godot/imported/apollonian7-ezgif.com-gif-maker.gif-59478c1c5db2100a59f26e08f40fdbc2.res"
+
+[deps]
+
+source_file="res://old_textures/old_mysc/apollonian7-ezgif.com-gif-maker.gif"
+dest_files=["res://.godot/imported/apollonian7-ezgif.com-gif-maker.gif-59478c1c5db2100a59f26e08f40fdbc2.res"]
+
+[params]
+
+storage/compress=true
